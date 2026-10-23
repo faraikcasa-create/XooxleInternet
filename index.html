@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XooxleInternet</title>
+<style>
+body{margin:0;font-family:system-ui;background:#f5f7fb;text-align:center}
+.top{padding:40px 20px 20px}
+.logo{font-size:42px;font-weight:800}
+.b{color:#0a6bc2}.o{color:#ef7a15}
+.search{max-width:600px;margin:20px auto;background:white;border-radius:40px;display:flex;box-shadow:0 5px 20px rgba(0,0,0,0.1);overflow:hidden;border:2px solid #0a6bc2}
+.search input{flex:1;border:0;padding:16px 20px;font-size:18px;outline:none;text-align:center}
+.search button{background:#0a6bc2;color:white;border:0;padding:0 30px;font-size:18px;cursor:pointer}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;max-width:650px;margin:30px auto;padding:15px}
+.card{background:white;border-radius:20px;padding:25px 10px;text-decoration:none;color:#333;box-shadow:0 3px 10px rgba(0,0,0,0.06)}
+.icon{font-size:40px}h3{margin:10px 0 5px}p{margin:0;font-size:13px;color:#777}
+.footer{margin:40px;color:#999;font-size:13px}
+</style>
+</head>
+<body>
+<div class="top">
+<div class="logo"><span class="b">Xooxle</span><span class="o">Internet</span></div>
+<p>بوابتك السريعة - خفيف حتى فالكونيكسيون الضعيفة</p>
+<div class="search">
+<input id="q" placeholder="قلب فالانترنت..." onkeydown="if(event.key==='Enter')go()">
+<button onclick="go()">بحث</button>
+</div>
+</div>
+<div class="grid">
+<a class="card" href="https://faraikcasa-create.github.io/faraikcasa.github.io/"><div class="icon">🛋️</div><h3>FARAIK CASA</h3><p>المحل ديالك</p></a>
+<a class="card" href="https://faraikcasa-create.github.io/XooxleMaps/"><div class="icon">🗺️</div><h3>XooxleMaps</h3><p>الخريطة</p></a>
+<a class="card" href="https://github.com/faraikcasa-create"><div class="icon">💻</div><h3>GitHub</h3><p>المشاريع</p></a>
+<a class="card" href="https://www.google.com"><div class="icon">🤖</div><h3>XooxleAI</h3><p>الذكاء الاصطناعي</p></a>
+</div>
+<div class="footer">XooxleInternet © 2026 - مكناس 🇲🇦</div>
+<script>
+function go(){let v=document.getElementById('q').value;if(!v)return;window.location='https://www.google.com/search?q='+encodeURIComponent(v);}
+</script>
+</body>
+                                                                                                             </html>
