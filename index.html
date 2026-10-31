@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>XooxleInternet</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0a6bc2">
 <style>
 body{margin:0;font-family:system-ui;background:#f5f7fb;text-align:center}
 .top{padding:40px 20px 20px}
@@ -20,22 +22,31 @@ body{margin:0;font-family:system-ui;background:#f5f7fb;text-align:center}
 </head>
 <body>
 <div class="top">
-<div class="logo"><span class="b">Xooxle</span><span class="o">Internet</span></div>
-<p>بوابتك السريعة - خفيف حتى فالكونيكسيون الضعيفة</p>
+<div class="logo"><span class="b">Xoo</span><span class="o">xle</span></div>
+</div>
 <div class="search">
-<input id="q" placeholder="قلب فالانترنت..." onkeydown="if(event.key==='Enter')go()">
+<input id="q" type="text" placeholder="قلب في Google..." onkeydown="if(event.key==='Enter')go()">
 <button onclick="go()">بحث</button>
 </div>
-</div>
 <div class="grid">
-<a class="card" href="https://faraikcasa-create.github.io/faraikcasa.github.io/"><div class="icon">🛋️</div><h3>FARAIK CASA</h3><p>المحل ديالك</p></a>
+<a class="card" href="https://faraikcasa-create.github.io/faraikcasa.github.io/"><div class="icon">🏠</div><h3>FARAIK CASA</h3><p>المحل ديالك</p></a>
 <a class="card" href="https://faraikcasa-create.github.io/XooxleMaps/"><div class="icon">🗺️</div><h3>XooxleMaps</h3><p>الخريطة</p></a>
 <a class="card" href="https://github.com/faraikcasa-create"><div class="icon">💻</div><h3>GitHub</h3><p>المشاريع</p></a>
 <a class="card" href="https://www.google.com"><div class="icon">🤖</div><h3>XooxleAI</h3><p>الذكاء الاصطناعي</p></a>
 </div>
-<div class="footer">XooxleInternet © 2026 - مكناس 🇲🇦</div>
+<div class="footer">XooxleInternet © 2026</div>
 <script>
-function go(){let v=document.getElementById('q').value;if(!v)return;window.location='https://www.google.com/search?q='+encodeURIComponent(v);}
+function go(){
+let v=document.getElementById('q').value;
+if(v) location.href='https://www.google.com/search?q='+encodeURIComponent(v);
+}
+if('serviceWorker' in navigator){
+navigator.serviceWorker.register('sw.js');
+}
 </script>
 </body>
-                                                                                                             </html>
+</html>
+
+                                                                                                             
+
+  
